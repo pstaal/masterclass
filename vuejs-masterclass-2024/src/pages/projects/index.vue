@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { supabase } from '@/lib/supabaseClient'
+import type { Tables } from '../../../database/types'
 import { ref } from 'vue'
-const projects = ref<any[] | null>(null)
+const projects = ref<Tables<'projects'>[] | null>(null)
 ;(async () => {
   const { error, data } = await supabase.from('projects').select()
   if (error) console.log(error)
