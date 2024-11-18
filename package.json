@@ -13,7 +13,7 @@
     "format": "prettier --write src/",
     "supabase:init": "supabase init",
     "supabase:login": "supabase login",
-    "supabase:link": "supabase link --project-ref baavizkjepbcaklxvgvd",
+    "supabase:link": "supabase link --project-ref vfibhnyayhyjpuefdltg",
     "supabase:types": "npx supabase gen types typescript --project-id baavizkjepbcaklxvgvd --schema public > database/types.ts",
     "db:migrate:new": "supabase migration new",
     "db:reset": "supabase db reset --linked",
@@ -56,5 +56,6 @@
     "unplugin-vue-router": "^0.10.1",
     "vite": "^5.2.8",
     "vue-tsc": "^2.0.11"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
